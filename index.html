@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="head-nav">
+          <h1>snap</h1>
+          <nav>
+            <img src="images/icon-menu.svg" onclick="show()" class="openMenu">
+            <ul class="navigation">
+              <li>
+                <div class="icon_link">
+                  <a href="javascript:void(0)">Features</a>
+                  <img src="images/icon-arrow-down.svg" alt="drop-down" class="drop-down">
+                </div>
+                <ul class="submenu">
+                  <li class="sub">
+                    <img src="images/icon-todo.svg" alt="todo">
+                    <a href="javascript:void(0)">TodoList</a>
+                  </li>
+                  <li class="sub">
+                    <img src="images/icon-calendar.svg" alt="calender">
+                    <a href="javascript:void(0)">Calender</a>
+                  </li>
+                  <li class="sub">
+                    <img src="images/icon-reminders.svg" alt="reminders">
+                    <a href="javascript:void(0)">Reminders</a>
+                  </li>
+                  <li class="sub">
+                    <img src="images/icon-planning.svg" alt="planning">
+                    <a href="javascript:void(0)">Planning</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="icon_link">
+                  <a href="javascript:void(0)">Company</a>
+                  <img src="images/icon-arrow-down.svg" alt="drop-down" class="drop-down">
+                </div>
+                <ul class="submenu2">
+                  <li><a href="javascript:void(0)">History</a></li>
+                  <li><a href="javascript:void(0)">OurTeam</a></li>
+                  <li><a href="javascript:void(0)">Blog</a></li>
+                </ul> 
+              </li>
+              <li class="border"><a href="javascript:void(0)">Careers</a></li>
+              <li class="border"><a href="javascript:void(0)"> About</a></li>
+              <li class="lower-navigation">
+                <a href="javascript:void(0)">Login</a>
+                <a href="javascript:void(0)"id="down-lower-navigation">Register</a>
+              </li>
+              <a href="javascript:void(0)" onclick="hide()"><img src="images/icon-close-menu.svg"  class="closeMenu"></a> 
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="wrap">
+          <div class="inner-wrap">
+            <div class="head-text">
+              <h1>Make</h1>
+              <h1>remote work</h1>
+            </div>
+            <div class="para">
+              <p>Get your team in sync, no matter your</p>
+              <p>location. Streamline processes, create</p> 
+              <p>team rituals, and watch productivity soar.</p>
+            </div>
+            <div class="button">
+              <button>Learn more</button>
+            </div>
+            <div class="logos">
+              <img src="images/client-databiz.svg">
+              <img src="images/client-audiophile.svg">
+              <img src="images/client-meet.svg">
+              <img src="images/client-maker.svg">
+            </div>
+          </div>
+          <div class="desktop-img">
+            <img src="images/image-hero-desktop.png" alt="wall">
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="attribution">
+          <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://twitter.com/Francis98648080" target="_blank">Francis</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
